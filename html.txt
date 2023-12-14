@@ -1,0 +1,8 @@
+<p>don't print this to pdf</p>
+<div id="pdf">
+  <p>
+    <font size="3" color="red">print this to pdf</font>
+  </p>
+</div>
+
+<button onclick="saveDiv('pdf','Title')">save div as pdf</button>
