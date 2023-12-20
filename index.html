@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+		function printDiv(print){
+			var printContents = document.getElementById(print).innerHTML;
+			var originalContents = document.body.innerHTML;
+
+			document.body.innerHTML = printContents;
+
+			window.print();
+
+			document.body.innerHTML = originalContents;
+
+		}
+	</script>
     <div id="links">
+        <div id="title">
+        <h1>Lesvoorbereiding creator <img src="afbeeldingen/nblz.png"></h1>
+        </div>
+        <div id="print">
+            <section>
+                test
+            </section>
+        </div>
+        <button onclick="printDiv('print')">Print only the above div</button>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
